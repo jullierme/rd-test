@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link type="text/css" rel="stylesheet" charset="UTF-8" href="note-taking-app.css">
+</head>
+
+
+
+<body>
+    <section>
+        <form>
+            <input type="hidden" id="noteId">
+            <textarea id="note" placeholder="Take a note"></textarea>
+            <button 
+                type="button" 
+                onclick="save()">
+                Save note
+            </button>
+            <select id="colorList">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+            </select>
+        </form>
+    </section>
+
+    <section>
+            <h2>Notes</h2>
+            <div id="notes" class="notes"></div>
+    </section>​​​​​
+</body>
+
+<script src="note-taking-app.js"></script>
+
+
+
+</html>
